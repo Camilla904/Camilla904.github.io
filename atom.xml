@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-07-29T15:06:02.876Z</updated>
+  <updated>2020-07-29T14:53:19.976Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,36 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>wodewenzhang</title>
-    <link href="http://yoursite.com/2020/07/29/wodewenzhang/"/>
-    <id>http://yoursite.com/2020/07/29/wodewenzhang/</id>
-    <published>2020-07-29T14:57:29.000Z</published>
-    <updated>2020-07-29T15:06:02.876Z</updated>
-    
-    <content type="html"><![CDATA[<p>##第一章</p><p>内容</p><hr><p>##第二张</p><p>jdsf</p><hr><p>##参考文献</p><p>www</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;##第一章&lt;/p&gt;
-&lt;p&gt;内容&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;##第二张&lt;/p&gt;
-&lt;p&gt;jdsf&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;##参考文献&lt;/p&gt;
-&lt;p&gt;www&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
