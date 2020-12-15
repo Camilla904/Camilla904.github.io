@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-12-14T01:17:38.597Z</updated>
+  <updated>2020-12-15T01:21:03.630Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Static modifier</title>
+    <link href="http://yoursite.com/2020/12/14/Static-modifier-b3319b10dc6545718ff67471263686ea/"/>
+    <id>http://yoursite.com/2020/12/14/Static-modifier-b3319b10dc6545718ff67471263686ea/</id>
+    <published>2020-12-14T05:00:00.000Z</published>
+    <updated>2020-12-15T01:21:03.630Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Static-modifier"><a href="#Static-modifier" class="headerlink" title="Static modifier"></a>Static modifier</h1><p>As mentioned on last post. <code>Static</code> is a <strong>non-access modifier.</strong> </p><p>For this section, we’ll explore more about static modifier.</p><hr><p>Recall that a static method is invoked through its <strong>class name</strong>, instead of through an object of that class. </p><p>Not only can <strong>methods</strong> be static, but <strong>variables</strong> can be static as well. We declare static class members using the <strong>static modifier.</strong></p><p>Let’s examine the implications of static variables and methods closely.</p><hr><h3 id="Static-variable"><a href="#Static-variable" class="headerlink" title="Static variable"></a>Static variable</h3><ul><li>A static variable, which is sometimes called a <strong>class variables</strong>, is shared among all instances of class.</li><li>There is only one copy of a static variable for all objects of the class. Therefore, changing the value of a static variable in one object changes it for all of the other.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> count = <span class="number">0</span>;</span><br></pre></td></tr></table></figure><ul><li>Memory space for a static variable is established when the class that contains it is referenced for the first time in a program. <strong>A local variable declared within a method cannot be static.</strong></li><li>Constants, which are declared using the <code>final</code> modifier, are often declared using the <code>static</code> modifier. Because the value of constants cannot be changed, there might as well be only one copy of the value across all objects of the class.</li></ul><h2 id="Static-Methods"><a href="#Static-Methods" class="headerlink" title="Static Methods"></a>Static Methods</h2><ul><li>Static methods can be invoked through the <strong>class name</strong>. <strong>We don’t have to instantiate an object of the class in order to invoke the method.</strong></li><li>A method is made static by using the <strong>static modifier</strong> in the method declaration.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getCount</span><span class="params">()</span></span></span><br><span class="line"><span class="function"> </span>&#123; </span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><ul><li>As we’ve seen many times, the <strong>main method</strong> of a Java program must be declared with the static modifier;</li><li>This is done so that main can be executed by the interpreter without instantiating an object from the class that contains main.</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String[] argc)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>Because static methods do not operate in the context of a particular object, they cannot reference instance variables, which exist only in an instance of a class. The compiler will issue an error if a static method attempts to use a <strong>nonstatic variable</strong>.</li><li>A static method can, however, reference static variables, because static variables exist independent of specific objects. Therefore, the main method can access only static or local variables.</li></ul><p><a href="https://github.com/Camilla904/1620ITEC/tree/main/Ch7/Slogan">Camilla904/1620ITEC</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Static-modifier&quot;&gt;&lt;a href=&quot;#Static-modifier&quot; class=&quot;headerlink&quot; title=&quot;Static modifier&quot;&gt;&lt;/a&gt;Static modifier&lt;/h1&gt;&lt;p&gt;As mentioned on la
+      
+    
+    </summary>
+    
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
   
   <entry>
     <title>Visibility Modifier</title>
