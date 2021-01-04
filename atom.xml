@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-12-15T01:24:26.707Z</updated>
+  <updated>2021-01-04T21:04:27.735Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS Selector</title>
+    <link href="http://yoursite.com/2021/01/04/css-selector/"/>
+    <id>http://yoursite.com/2021/01/04/css-selector/</id>
+    <published>2021-01-04T05:00:00.000Z</published>
+    <updated>2021-01-04T21:04:27.735Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="CSS-Selectors"><a href="#CSS-Selectors" class="headerlink" title="CSS Selectors"></a>CSS Selectors</h1><p>CSS selectors are used to “find” (or select) the HTML elements you want to style.</p><h3 id="element-Selector"><a href="#element-Selector" class="headerlink" title="element Selector"></a>element Selector</h3><p>The element selector selects HTML elements based on the element name.</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="The-CSS-id-Selector"><a href="#The-CSS-id-Selector" class="headerlink" title="The CSS id Selector"></a>The CSS id Selector</h3><p>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#para1</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="The-CSS-class-Selector"><a href="#The-CSS-class-Selector" class="headerlink" title="The CSS class Selector"></a>The CSS class Selector</h3><p>To select elements with a specific class, write a period (.) character, followed by the class name.</p><p>You can also specify that only specific HTML elements should be affected by a class.</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">p</span><span class="selector-class">.center</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>HTML elements can also refer to more than one class.</li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=&quot;center large&quot;&gt;This paragraph refers to two classes.&lt;/p&gt;</span><br></pre></td></tr></table></figure><h3 id="The-CSS-Universal-Selector"><a href="#The-CSS-Universal-Selector" class="headerlink" title="The CSS Universal Selector"></a>The CSS Universal Selector</h3><p>The universal selector (*) selects all HTML elements on the page.</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="The-CSS-Grouping-Selector"><a href="#The-CSS-Grouping-Selector" class="headerlink" title="The CSS Grouping Selector"></a>The CSS Grouping Selector</h3><p>The grouping selector selects all the HTML elements with the same style definitions.</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">h2</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;CSS-Selectors&quot;&gt;&lt;a href=&quot;#CSS-Selectors&quot; class=&quot;headerlink&quot; title=&quot;CSS Selectors&quot;&gt;&lt;/a&gt;CSS Selectors&lt;/h1&gt;&lt;p&gt;CSS selectors are used to 
+      
+    
+    </summary>
+    
+    
+    
+      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>Static modifier</title>
