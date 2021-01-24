@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-01-10T18:49:10.129Z</updated>
+  <updated>2021-01-24T21:01:55.947Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Using git</title>
+    <link href="http://yoursite.com/2021/01/24/git/"/>
+    <id>http://yoursite.com/2021/01/24/git/</id>
+    <published>2021-01-24T05:00:00.000Z</published>
+    <updated>2021-01-24T21:01:55.947Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Lab1-Using-git"><a href="#Lab1-Using-git" class="headerlink" title="Lab1 Using git"></a>Lab1 Using git</h1><h2 id="A-Intro-to-version-control-Systems"><a href="#A-Intro-to-version-control-Systems" class="headerlink" title="A. Intro to version control Systems"></a>A. Intro to version control Systems</h2><p>Version control systems can track the history of code revisions, from current state of the code all the way back until it was first tracked.</p><p>Git is one tool that allow us version control. Git has excellent documentation.</p><h3 id="Git-is-ditributed-version-control-system"><a href="#Git-is-ditributed-version-control-system" class="headerlink" title="Git is ditributed version control system"></a>Git is ditributed version control system</h3><ul><li>As opppsite centralized version control system. This means that every developer’s computer stores the entire history(including all old versions) of the entire project!</li><li>We call the entire history of an entire project a “repository”</li><li>The repository is stored locally leads us to our ability to use Git locally on our own computers, even without an interet connection.</li></ul><hr><h2 id="B-Local-Repostitories"><a href="#B-Local-Repostitories" class="headerlink" title="B. Local Repostitories"></a>B. Local Repostitories</h2><ul><li><code>git init</code>: tells the git version control system that we want to track the history of the current directory.</li><li><code>git add</code>  :add file to the list of files to track, and ready be commited</li><li><code>git commit -m&quot;&quot;</code>:stick cpoies of out tofu recipes into the repository -m command lets us add a message to the commit</li><li><code>git log</code> : Lists all the panoramic photos we’ve ever taken</li><li><code>git status</code>: Show you the current tracked and untracked files</li><li><code>git show</code> : Looks at what is insde a paticular file</li><li><code>git checkout</code>: Rearranges files back to how they looked in a given status<ul><li>The right format to use git checkout :  **<code>**git checkout ######### file.txt</code></li></ul></li></ul><hr><h3 id="Undoing-changes"><a href="#Undoing-changes" class="headerlink" title="Undoing changes"></a>Undoing changes</h3><ul><li>Unstage a file that you haven’t yet committed:<code>$ git reset HEAD [file]</code></li><li>Amend latest commit(Changing commit message or add forgotten files)This new amended commit will replace the previous commit:<code>$git add [forgotten-file] $git commit -—amend</code></li><li>Revert a file to its state at the time of the most recent commit: <code>$ git checkout —[file]</code></li></ul><h3 id="Rule-of-Thumb"><a href="#Rule-of-Thumb" class="headerlink" title="Rule of Thumb:"></a>Rule of Thumb:</h3><p>If you commit, you can always revert your code or change it. However, if you don’t commit, you won’t be able to get old version back.</p><hr><h3 id="Additional-comman-line"><a href="#Additional-comman-line" class="headerlink" title="Additional comman line"></a>Additional comman line</h3><p><strong>If you want to create a file</strong>: <code>touch file.txt</code></p><p><strong>Use vim to edit your file</strong>: <code>vim file.txt</code> <code>i</code>: start to edit  <code>shift + esc</code> to stop edit  <code>:wq</code> save and quit the file </p><p>If you want to delete your git repo: <code>rm -f .git</code></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Lab1-Using-git&quot;&gt;&lt;a href=&quot;#Lab1-Using-git&quot; class=&quot;headerlink&quot; title=&quot;Lab1 Using git&quot;&gt;&lt;/a&gt;Lab1 Using git&lt;/h1&gt;&lt;h2 id=&quot;A-Intro-to-versio
+      
+    
+    </summary>
+    
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>HTML table</title>
